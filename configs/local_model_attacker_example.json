@@ -1,0 +1,21 @@
+{
+  "_comment": "Requires Ollama running locally. Replace the model name with one you have pulled. Not run in the development sandbox; adapter tested against mocked responses only.",
+  "scenario_ids": ["email-summary-exfil", "doc-summary-share", "cal-agenda-invite"],
+  "defenses": ["baseline", "defensive_prompt", "classifier", "tool_validator"],
+  "attack_modes": ["static", "adaptive_ollama"],
+  "attack_budget": 20,
+  "seeds": [1, 2, 3, 4, 5],
+  "target_mode": "simulated",
+  "model_config": {
+    "name": "REPLACE-WITH-YOUR-MODEL",
+    "endpoint": "http://127.0.0.1:11434/api/generate",
+    "revision": "record the exact model digest here",
+    "license": "record the model license here",
+    "quantization": "record the quantization here",
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 200,
+    "hardware": "record the machine here",
+    "abliterated": false
+  }
+}

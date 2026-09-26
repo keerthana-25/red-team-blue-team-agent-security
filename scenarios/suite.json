@@ -1,0 +1,16 @@
+{
+  "suite_id": "core",
+  "suite_version": "0.1.0",
+  "note": "Hand-authored demonstration suite. Not yet reviewed against a published benchmark.",
+  "scenarios": [
+    "email_summary.json",
+    "email_reply_lookalike.json",
+    "email_invoice_forward.json",
+    "doc_summary_share.json",
+    "doc_vendor_tamper.json",
+    "doc_share_legit.json",
+    "cal_agenda_invite.json",
+    "cal_schedule_sync.json",
+    "email_benign_hard_negatives.json"
+  ]
+}

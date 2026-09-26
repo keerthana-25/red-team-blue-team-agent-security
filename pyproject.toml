@@ -1,0 +1,11 @@
+[project]
+name = "cmpe295a-red-team-blue-team-prototype"
+version = "0.2.2"
+description = "Red Team vs. Blue Team for Tool-Using Agents (SJSU CMPE 295A capstone; codebase name AgentGuard). Zero third-party dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["rtbt", "rtbt.environments", "rtbt.attackers", "rtbt.target_agents"]

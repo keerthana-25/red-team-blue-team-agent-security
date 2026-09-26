@@ -1,0 +1,8 @@
+{
+  "scenario_ids": ["email-summary-exfil", "cal-schedule-sync"],
+  "defenses": ["baseline", "defensive_prompt", "classifier", "tool_validator"],
+  "attack_modes": ["static", "adaptive_demo"],
+  "attack_budget": 15,
+  "seeds": [1, 2, 3],
+  "target_mode": "simulated"
+}

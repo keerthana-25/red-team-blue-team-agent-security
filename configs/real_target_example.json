@@ -1,0 +1,17 @@
+{
+  "_comment": "Requires Ollama running locally with a tool-following model. Not run in the development sandbox; adapter tested against mocked responses only.",
+  "scenario_ids": ["email-summary-exfil", "doc-share-legit"],
+  "defenses": ["baseline", "defensive_prompt", "classifier", "tool_validator"],
+  "attack_modes": ["static"],
+  "attack_budget": 20,
+  "seeds": [1, 2, 3],
+  "target_mode": "real_model",
+  "real_target_config": {
+    "name": "REPLACE-WITH-YOUR-MODEL",
+    "endpoint": "http://127.0.0.1:11434/api/generate",
+    "revision": "record the exact model digest here",
+    "temperature": 0.2,
+    "max_tokens": 400,
+    "max_tool_turns": 4
+  }
+}

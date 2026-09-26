@@ -1,0 +1,9 @@
+{
+  "defenses": ["baseline", "defensive_prompt", "classifier", "tool_validator"],
+  "attack_modes": ["static", "adaptive_demo"],
+  "attack_budget": 20,
+  "seeds": [1, 2, 3, 4, 5],
+  "target_mode": "simulated",
+  "final_window_fraction": 0.2,
+  "final_window_minimum": 3
+}
